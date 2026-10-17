@@ -52,3 +52,4 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 40px;colo
 footer .paid{margin-top:14px;font-size:12px;opacity:.85}footer .paid a{color:var(--muted);text-decoration:underline}
 .crumb{font-size:14px;margin:28px 0 0}.crumb a{color:var(--muted)}
 .grid2>*{min-width:0}pre{white-space:pre-wrap;word-break:break-all}
+.nd{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#5d6470;background:#efefea;border-radius:6px;padding:1px 6px}

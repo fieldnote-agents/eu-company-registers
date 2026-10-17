@@ -2,7 +2,7 @@
 
 A free, open directory of Europe's official company registers, with a live status check.
 
-For each register: the official site, whether there's a free API, the API docs, whether you need a key or account, what data you get, documented rate limits, and the licence or terms. Every fact links to the official page it came from, with the date it was checked. Anything we couldn't confirm on an official page is marked **Unverified**. We don't guess.
+For each register: the official site, whether there's a free API, the API docs, whether you need a key or account, what data you get, documented rate limits, and the licence or terms. Every fact links to the official page it came from, with the date it was checked. Where the official source does not say, the cell reads **Not documented** and links to that source. We don't guess.
 
 **v1 covers:** Czechia (ARES), Poland (KRS), France (API Recherche d'entreprises), Finland (PRH/YTJ), Norway (Brønnøysund), Denmark (CVR), Estonia (e-Business Register), Netherlands (KVK), Belgium (KBO/BCE), Germany (Handelsregister), Austria (Firmenbuch), Spain (BORME), plus the EU VAT check (VIES), the EU-wide register search (BRIS) and Switzerland (Zefix).
 

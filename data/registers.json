@@ -102,9 +102,11 @@
    },
    "rate_limit": {
     "value": null,
-    "verified": false,
-    "note": "Not stated on the official pages we checked.",
-    "checked": "2026-10-17"
+    "verified": true,
+    "documented": false,
+    "checked": "2026-10-17",
+    "source": "https://prs.ms.gov.pl/krs/openApi",
+    "note": "Not stated in the ministry's announcement; the API docs page was in maintenance on 17 Oct 2026."
    },
    "licence": {
     "value": "Published under Art. 4b(2) of the KRS Act and the Act of 11 Aug 2021 on open data and re-use of PSI; GDPR applies.",
@@ -216,10 +218,10 @@
     "source": "https://avoindata.prh.fi/en"
    },
    "rate_limit": {
-    "value": null,
-    "verified": false,
-    "note": "Not stated on the official pages we checked.",
-    "checked": "2026-10-17"
+    "value": "No numeric limit documented; the API spec lists an HTTP 429 'Too many requests' response.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://avoindata.prh.fi/opendata-ytj-api/v3/schema?lang=en"
    },
    "licence": {
     "value": "CC BY 4.0. Mention the source; don't use PRH/YTJ logos or a look-alike layout.",
@@ -304,11 +306,10 @@
     "source": "https://erhvervsstyrelsen.dk/kom-godt-igang-med-elasticSearch"
    },
    "free_api": {
-    "value": "Yes, with credentials: system-to-system Elasticsearch access (user ID + password from cvrselvbetjening@erst.dk), or Datafordeler GraphQL. Price not stated on the pages we read.",
+    "value": "Yes, with credentials: system-to-system Elasticsearch access (user ID + password from cvrselvbetjening@erst.dk), or Datafordeler GraphQL/file download, where CVR is published as free basic data.",
     "verified": true,
     "checked": "2026-10-17",
     "source": "https://erhvervsstyrelsen.dk/kom-godt-igang-med-elasticSearch",
-    "note": "Whether access is free of charge: unverified on the official pages we read.",
     "short": "With credentials"
    },
    "api_docs": {
@@ -337,10 +338,10 @@
     "source": "https://erhvervsstyrelsen.dk/kom-godt-igang-med-elasticSearch"
    },
    "licence": {
-    "value": null,
-    "verified": false,
-    "note": "Datafordeler says CVR follows its general user terms; we have not read those terms yet.",
-    "checked": "2026-10-17"
+    "value": "CVR data on Datafordeler are 'free basic data' (frie grunddata) under CC BY 4.0; credit the Central Business Register (CVR). Access terms are given when you request access.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://datafordeler.dk/vejledning/brugervilkaar/det-centrale-virksomhedsregister-cvr/"
    },
    "check": {
     "url": "https://datacvr.virk.dk/",
@@ -439,22 +440,22 @@
     "short": "Public key; paid key for the rest"
    },
    "data": {
-    "value": "Open Dataset: basic company data (basisbedrijfsgegevens) and annual accounts (jaarrekeningen) by KVK number, for listed legal forms such as BV, NV, CV, VOF. Paid: search, basic profile, branch profile, names, change service.",
+    "value": "Open Dataset: basic company data of BVs and NVs only (bulk delivery also available); annual accounts dataset. Paid APIs: search, basic profile, branch profile, names, change service.",
     "verified": true,
     "checked": "2026-10-17",
-    "source": "https://developers.kvk.nl/nl/faq"
+    "source": "https://developers.kvk.nl/nl/documentation/open-dataset-basis-bedrijfsgegevens-api"
    },
    "rate_limit": {
-    "value": "Open Dataset APIs: 1 query per minute (separate from other API limits). Our checker received HTTP 429 when calling twice.",
+    "value": "Open Dataset: max 1 query per minute per IP address, plus a shared limit of 200 queries per 5 minutes for all users together. Our checker has received HTTP 429.",
     "verified": true,
     "checked": "2026-10-17",
-    "source": "https://developers.kvk.nl/nl/faq"
+    "source": "https://developers.kvk.nl/nl/documentation/open-dataset-basis-bedrijfsgegevens-api"
    },
    "licence": {
-    "value": null,
-    "verified": false,
-    "note": "Not stated on the official pages we checked.",
-    "checked": "2026-10-17"
+    "value": "Open Dataset (HVD): CC BY 4.0. Enriching it so data can be traced to an individual person is not allowed.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://developers.kvk.nl/nl/documentation/open-dataset-basis-bedrijfsgegevens-api"
    },
    "check": {
     "url": "https://opendata.kvk.nl/api/v1/hvds/basisbedrijfsgegevens/kvknummer/69599084",
@@ -508,9 +509,11 @@
    },
    "rate_limit": {
     "value": null,
-    "verified": false,
-    "note": "Not stated on the official pages we checked.",
-    "checked": "2026-10-17"
+    "verified": true,
+    "documented": false,
+    "checked": "2026-10-17",
+    "source": "https://economie.fgov.be/nl/themas/ondernemingen/kruispuntbank-van/diensten-voor-iedereen/hergebruik-van-publieke/kruispuntbank-van-0",
+    "note": "No limits stated on the official Open Data page."
    },
    "licence": {
     "value": "KBO Open Data licence; personal data may not be reused for direct marketing.",
@@ -539,39 +542,45 @@
    },
    "free_api": {
     "value": null,
-    "verified": false,
-    "note": "No official API documented on the portal or the ministry page we checked. Retrieval via the portal has been free since 1 Aug 2022.",
-    "checked": "2026-10-17"
+    "verified": true,
+    "documented": false,
+    "checked": "2026-10-17",
+    "source": "https://www.handelsregister.de/rp_web/information/welcome.xhtml",
+    "note": "No API is described on the portal's information and terms page; retrieval is through the portal."
    },
    "api_docs": {
     "value": null,
-    "verified": false,
-    "note": "No API documentation found on the official pages we checked.",
-    "checked": "2026-10-17"
+    "verified": true,
+    "documented": false,
+    "checked": "2026-10-17",
+    "source": "https://www.handelsregister.de/rp_web/information/welcome.xhtml",
+    "note": "No API documentation on the portal."
    },
    "key_needed": {
     "value": null,
-    "verified": false,
-    "note": "Not stated on the official pages we checked.",
-    "checked": "2026-10-17"
+    "verified": true,
+    "documented": false,
+    "checked": "2026-10-17",
+    "source": "https://www.handelsregister.de/rp_web/information/welcome.xhtml",
+    "note": "The terms page does not say whether searching needs an account."
    },
    "data": {
-    "value": "Commercial, cooperative, partnership, company and association registers of all federal states, plus register announcements; register documents (e.g. articles) can be retrieved free since 1 Aug 2022.",
+    "value": "Index data, documents, register printouts (current, chronological, historic) and structured register content (SI) as an XML file, for the commercial, cooperative, partnership and association registers; retrieval free since 1 Aug 2022.",
     "verified": true,
     "checked": "2026-10-17",
-    "source": "https://www.bmjv.de/DE/themen/wirtschaft_finanzen/handels_gesellschaftsrecht/handelsregister/handelsregister_node.html"
+    "source": "https://www.handelsregister.de/rp_web/information/welcome.xhtml"
    },
    "rate_limit": {
-    "value": null,
-    "verified": false,
-    "note": "Third-party sources cite a per-hour retrieval cap; we could not confirm it on an official page. The portal itself warns of overload-related outages.",
-    "checked": "2026-10-17"
+    "value": "Max 60 searches or retrievals of legal entities per hour; higher volumes need a registered (whitelisted) IP via the portal's service office at the Hagen local court. IPs can be blocked on suspected misuse or overload.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.handelsregister.de/rp_web/information/welcome.xhtml"
    },
    "licence": {
-    "value": null,
-    "verified": false,
-    "note": "Not stated on the official pages we checked.",
-    "checked": "2026-10-17"
+    "value": "Portal terms of use: individual retrievals for information purposes (§ 9(1) HGB); systematic retrieval to build parallel full or partial registers is not allowed; use only within GDPR and German data-protection law.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.handelsregister.de/rp_web/information/welcome.xhtml"
    },
    "check": {
     "url": "https://www.handelsregister.de/rp_web/welcome.xhtml",
@@ -621,9 +630,11 @@
    },
    "rate_limit": {
     "value": null,
-    "verified": false,
-    "note": "Not stated on the official pages we checked.",
-    "checked": "2026-10-17"
+    "verified": true,
+    "documented": false,
+    "checked": "2026-10-17",
+    "source": "https://www.bmj.gv.at/service/weiterverwendung-von-informationen.html",
+    "note": "Not stated on the ministry page or in its web-service description (ZIP)."
    },
    "licence": {
     "value": "Agreement under § 6(3)(3) with § 10 IWG (Austrian re-use act), PDF on the ministry page.",
@@ -679,9 +690,11 @@
    },
    "rate_limit": {
     "value": null,
-    "verified": false,
-    "note": "Not stated on the official pages we checked.",
-    "checked": "2026-10-17"
+    "verified": true,
+    "documented": false,
+    "checked": "2026-10-17",
+    "source": "https://www.boe.es/datosabiertos/documentos/APIsumarioBORME.pdf",
+    "note": "Not stated in the BORME API document."
    },
    "licence": {
     "value": "BOE re-use conditions (standard licence approved by AEBOE resolution of 27 Jun 2024); reuse implies accepting them, with source attribution.",
@@ -773,39 +786,46 @@
    },
    "free_api": {
     "value": null,
-    "verified": false,
-    "note": "No public API documented on the portal page we checked.",
-    "checked": "2026-10-17"
+    "verified": true,
+    "documented": false,
+    "checked": "2026-10-17",
+    "source": "https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu/general-information-find-company_en",
+    "note": "The official pages describe a web search service only; no API is described."
    },
    "api_docs": {
     "value": null,
-    "verified": false,
-    "note": "No API documentation found.",
-    "checked": "2026-10-17"
+    "verified": true,
+    "documented": false,
+    "checked": "2026-10-17",
+    "source": "https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu/general-information-find-company_en",
+    "note": "No API documentation on the official pages."
    },
    "key_needed": {
-    "value": null,
-    "verified": false,
-    "note": "Not stated on the official pages we checked.",
-    "checked": "2026-10-17"
-   },
-   "data": {
-    "value": "Search across the interconnected business registers of all EU countries (interconnected since June 2017).",
+    "value": "No mandatory registration to search (Commission report on BRIS, SWD(2023) 79).",
     "verified": true,
     "checked": "2026-10-17",
-    "source": "https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu_en"
+    "source": "https://ec.europa.eu/transparency/documents-register/api/files/SWD(2023)79_0/de00000001046891",
+    "short": "No registration to search"
+   },
+   "data": {
+    "value": "Limited liability companies and their branches (and SEs) in the EU, Iceland, Liechtenstein and Norway: basic company details, then documents such as articles, annual accounts, capital and legal representatives where the register provides them.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu/general-information-find-company_en"
    },
    "rate_limit": {
     "value": null,
-    "verified": false,
-    "note": "Not stated on the official pages we checked.",
-    "checked": "2026-10-17"
+    "verified": true,
+    "documented": false,
+    "checked": "2026-10-17",
+    "source": "https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu/general-information-find-company_en",
+    "note": "No limits described on the official pages."
    },
    "licence": {
-    "value": null,
-    "verified": false,
-    "note": "Not stated on the official pages we checked.",
-    "checked": "2026-10-17"
+    "value": "Set up under Directive 2012/17/EU and Implementing Regulation (EU) 2015/884. Only information the national registers provide free of charge can be requested; paid documents must be bought from the national register.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu/general-information-find-company_en"
    },
    "check": {
     "url": "https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu_en",
@@ -831,7 +851,7 @@
     "verified": true,
     "checked": "2026-10-17",
     "source": "https://www.bj.admin.ch/de/handelsregister-zefix-und-regix",
-    "note": "Price: unverified.",
+    "note": "Price: not documented on the official page.",
     "short": "On request"
    },
    "api_docs": {
@@ -841,11 +861,10 @@
     "source": "https://www.bj.admin.ch/de/handelsregister-zefix-und-regix"
    },
    "key_needed": {
-    "value": "Yes. Endpoints require credentials (our unauthenticated call got HTTP 401).",
+    "value": "Yes. HTTP Basic credentials ('Zefix-Credentials'); our unauthenticated call got HTTP 401.",
     "verified": true,
     "checked": "2026-10-17",
-    "source": "https://www.bj.admin.ch/de/handelsregister-zefix-und-regix",
-    "short": "Yes: credentials"
+    "source": "https://www.zefix.admin.ch/ZefixPublicREST/v3/api-docs"
    },
    "data": {
     "value": "Single queries on the daily-updated central business name index (company search, by UID/CH-ID/EHRA-ID, SOGC publications, legal forms). No subscriptions or full-database downloads; core data of active entities is on opendata.swiss.",
@@ -855,9 +874,11 @@
    },
    "rate_limit": {
     "value": null,
-    "verified": false,
-    "note": "Not stated on the official pages we checked.",
-    "checked": "2026-10-17"
+    "verified": true,
+    "documented": false,
+    "checked": "2026-10-17",
+    "source": "https://www.zefix.admin.ch/ZefixPublicREST/swagger-ui/index.html",
+    "note": "Not stated in the API spec or on the Federal Office of Justice page."
    },
    "licence": {
     "value": "“OGD Open use. Must provide the source.” (opendata.swiss terms).",

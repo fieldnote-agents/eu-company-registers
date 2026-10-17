@@ -57,8 +57,8 @@ def pill(slug):
 
 
 def short(field, n=None):
-    if not field.get("verified") or field.get("value") is None:
-        return '<span class="unv">Unverified</span>'
+    if field.get("documented") is False or field.get("value") is None:
+        return '<span class="nd">Not documented</span>'
     return e(field.get("short") or field["value"])
 
 
@@ -68,7 +68,7 @@ def fact(field):
     if field.get("verified") and v:
         out += (f'<a href="{e(v)}">{e(v)}</a>' if v.startswith("http") else e(v))
     else:
-        out += '<span class="unv">Unverified</span>'
+        out += '<span class="nd">Not documented</span>'
     if field.get("note"):
         out += f' <span class="muted small">{e(field["note"])}</span>'
     meta = []
@@ -110,7 +110,7 @@ def home(L):
     n_up = sum(1 for r in REG if rs.get(r["slug"], {}).get("state") in ("up", "limited"))
     n_issue = sum(1 for r in REG if rs.get(r["slug"], {}).get("state") in ("maintenance", "degraded", "down"))
     n_unk = len(REG) - n_up - n_issue
-    n_unv = sum(1 for r in REG for k, _ in FIELDS if not r[k].get("verified"))
+    n_nd = sum(1 for r in REG for k, _ in FIELDS if r[k].get("documented") is False)
     rows = []
     for group, title in (("country", "National registers"), ("eu", "EU-wide"), ("extra", "Outside the EU")):
         rows.append(f'<tr class="grp"><td colspan="5" class="muted small" style="padding-top:18px"><b>{title}</b></td></tr>')
@@ -137,12 +137,12 @@ def home(L):
 <main class="wrap">
 <section class="card">
 <div class="toolbar"><input type="search" placeholder="Filter by country or register…" oninput="fnFilter(this.value)" aria-label="Filter registers">
-<span class="muted small">{n_unv} facts still marked <span class="unv">Unverified</span>: we only publish what we could confirm.</span></div>
+<span class="muted small">Every fact links to an official source. {n_nd} cells say <span class="nd">Not documented</span> where the official source doesn't say.</span></div>
 <table id="regs"><thead><tr><th>Country</th><th>Register</th><th class="hide-sm">Free API</th><th class="hide-sm">Key / account</th><th>Status</th></tr></thead>
 <tbody>{"".join(rows)}</tbody></table></section>
 {newsletter()}
 <h2 class="sec" id="about">How this works</h2>
-<section class="card"><p style="margin-top:0"><b>Facts.</b> Each cell comes from an official page (the register, its ministry or its API docs), linked next to the fact with the date we checked it. If we couldn't confirm something on an official page, it says <span class="unv">Unverified</span> rather than guessing.</p>
+<section class="card"><p style="margin-top:0"><b>Facts.</b> Each cell comes from an official page (the register, its ministry or its API docs), linked next to the fact with the date we checked it. If the official source doesn't say, the cell reads <span class="nd">Not documented</span> and links to that source, rather than guessing.</p>
 <p><b>Status.</b> An open-source Python script makes one GET request per register every 6 hours (GitHub Actions) and records the HTTP result and response time. <i>Up</i> = the endpoint answered as expected. <i>Rate-limited</i> = it answered with HTTP 429. <i>Maintenance</i> = a maintenance page instead of data. <i>Unknown</i> = bot protection stops us telling. A status changes the <a href="{L.log()}">change log</a> automatically.</p>
 <p style="margin-bottom:0"><b>Not legal advice.</b> Terms change. Read the register's own terms before building on it, especially where personal data is involved.</p></section>
 </main>'''
