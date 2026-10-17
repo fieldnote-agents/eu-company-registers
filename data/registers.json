@@ -1,0 +1,853 @@
+{
+ "generated": "2026-10-17",
+ "registers": [
+  {
+   "slug": "czechia-ares",
+   "code": "CZ",
+   "country": "Czechia",
+   "group": "country",
+   "register": "ARES – Administrativní registr ekonomických subjektů",
+   "operator": "Ministry of Finance of the Czech Republic",
+   "register_url": {
+    "value": "https://ares.gov.cz/",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://data.mf.gov.cz/api/ares.html"
+   },
+   "free_api": {
+    "value": "Yes. Anyone may use the API if they respect the operating conditions.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://data.mf.gov.cz/api/ares.html"
+   },
+   "api_docs": {
+    "value": "https://ares.gov.cz/swagger-ui/",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://data.mf.gov.cz/api/ares.html"
+   },
+   "key_needed": {
+    "value": "No. A keyless lookup by IČO returned HTTP 200 on our check.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00006947"
+   },
+   "data": {
+    "value": "Search for an economic subject and its public data drawn from the source registers (e.g. name, IČO, registered address).",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://data.mf.gov.cz/api/ares.html"
+   },
+   "rate_limit": {
+    "value": "The ministry may restrict users who send more than 500 queries a minute, repeat identical or invalid queries, run many parallel queries, rotate IP addresses or crawl with random data.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://data.mf.gov.cz/api/ares.html"
+   },
+   "licence": {
+    "value": "Open-data catalogue entry: not a copyrighted work, no database right; contains personal data.",
+    "verified": true,
+    "checked": "2026-10-15",
+    "source": "https://data.mf.gov.cz/katalog/cs/dataset/ares-xml-sluzby/resource/62bc1e0d-6e9a-407d-8c9a-4a102b8979bd"
+   },
+   "check": {
+    "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00006947",
+    "expect": "json"
+   },
+   "apify": "czech-company-check-ares",
+   "last_checked": "2026-10-17"
+  },
+  {
+   "slug": "poland-krs",
+   "code": "PL",
+   "country": "Poland",
+   "group": "country",
+   "register": "KRS – Krajowy Rejestr Sądowy (National Court Register)",
+   "operator": "Ministry of Justice of Poland",
+   "register_url": {
+    "value": "https://prs.ms.gov.pl/krs/openApi",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.gov.pl/web/sprawiedliwosc/uruchomienie-otwartego-api-krajowego-rejestru-sadowego"
+   },
+   "free_api": {
+    "value": "Yes. The open KRS API launched on 8 Mar 2022 under the 2021 Act on open data and re-use of public-sector information.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.gov.pl/web/sprawiedliwosc/uruchomienie-otwartego-api-krajowego-rejestru-sadowego"
+   },
+   "api_docs": {
+    "value": "https://prs.ms.gov.pl/krs/openApi",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.gov.pl/web/sprawiedliwosc/uruchomienie-otwartego-api-krajowego-rejestru-sadowego",
+    "note": "On 17 Oct 2026 this page showed a 'Przerwa techniczna' (technical break) notice."
+   },
+   "key_needed": {
+    "value": "No key needed (no key was used on our 15 Oct 2026 check).",
+    "verified": true,
+    "checked": "2026-10-15",
+    "source": "https://prs.ms.gov.pl/krs/openApi"
+   },
+   "data": {
+    "value": "Equivalent of the current and full KRS extract (odpis aktualny / pełny), with GDPR applied; daily and hourly change bulletins.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.gov.pl/web/sprawiedliwosc/uruchomienie-otwartego-api-krajowego-rejestru-sadowego",
+    "note": "Change bulletins: from the API docs page, checked 15 Oct 2026."
+   },
+   "rate_limit": {
+    "value": null,
+    "verified": false,
+    "note": "Not stated on the official pages we checked.",
+    "checked": "2026-10-17"
+   },
+   "licence": {
+    "value": "Published under Art. 4b(2) of the KRS Act and the Act of 11 Aug 2021 on open data and re-use of PSI; GDPR applies.",
+    "verified": true,
+    "checked": "2026-10-15",
+    "source": "https://prs.ms.gov.pl/krs/openApi"
+   },
+   "check": {
+    "url": "https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/0000019193?rejestr=P&format=json",
+    "expect": "json"
+   },
+   "apify": "poland-krs-company-check",
+   "last_checked": "2026-10-17"
+  },
+  {
+   "slug": "france-recherche-entreprises",
+   "code": "FR",
+   "country": "France",
+   "group": "country",
+   "register": "API Recherche d’entreprises (Annuaire des Entreprises)",
+   "operator": "French State (api.gouv.fr / data.gouv.fr)",
+   "register_url": {
+    "value": "https://annuaire-entreprises.data.gouv.fr/",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://recherche-entreprises.api.gouv.fr/docs/"
+   },
+   "free_api": {
+    "value": "Yes. The API is described as fully open-access.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://recherche-entreprises.api.gouv.fr/docs/"
+   },
+   "api_docs": {
+    "value": "https://recherche-entreprises.api.gouv.fr/docs/",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://recherche-entreprises.api.gouv.fr/docs/"
+   },
+   "key_needed": {
+    "value": "No.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://recherche-entreprises.api.gouv.fr/docs/"
+   },
+   "data": {
+    "value": "Search for companies, associations and public services by name, address, directors or elected officials. Not the full Sirene database; non-diffusible companies and refused RCS registrations are excluded.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://recherche-entreprises.api.gouv.fr/docs/"
+   },
+   "rate_limit": {
+    "value": "Max 7 requests/second per IP and 30/second per ASN; HTTP 429 with Retry-After when exceeded.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://recherche-entreprises.api.gouv.fr/docs/"
+   },
+   "licence": {
+    "value": "Underlying dataset on data.gouv.fr: Licence Ouverte / Open Licence 2.0.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.data.gouv.fr/fr/datasets/donnees-des-entreprises-utilisees-dans-lannuaire-des-entreprises/"
+   },
+   "check": {
+    "url": "https://recherche-entreprises.api.gouv.fr/search?q=danone&per_page=1",
+    "expect": "json"
+   },
+   "last_checked": "2026-10-17"
+  },
+  {
+   "slug": "finland-prh-ytj",
+   "code": "FI",
+   "country": "Finland",
+   "group": "country",
+   "register": "Finnish Trade Register via the YTJ open-data API",
+   "operator": "Finnish Patent and Registration Office (PRH)",
+   "register_url": {
+    "value": "https://avoindata.prh.fi/en",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://avoindata.prh.fi/en"
+   },
+   "free_api": {
+    "value": "Yes. The data are available free of charge and updated once a day.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://avoindata.prh.fi/en/info/swagger-ui"
+   },
+   "api_docs": {
+    "value": "https://avoindata.prh.fi/en/info/swagger-ui",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://avoindata.prh.fi/opendata-ytj-api/v3/schema?lang=en"
+   },
+   "key_needed": {
+    "value": "No. A keyless lookup by Business ID returned HTTP 200 on our check.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=0112038-9"
+   },
+   "data": {
+    "value": "Basic details of companies in the Finnish Trade Register; registered notifications since 7 Nov 2014; iXBRL financial statements.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://avoindata.prh.fi/en"
+   },
+   "rate_limit": {
+    "value": null,
+    "verified": false,
+    "note": "Not stated on the official pages we checked.",
+    "checked": "2026-10-17"
+   },
+   "licence": {
+    "value": "CC BY 4.0. Mention the source; don't use PRH/YTJ logos or a look-alike layout.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://avoindata.prh.fi/en/info/swagger-ui"
+   },
+   "check": {
+    "url": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=0112038-9",
+    "expect": "json"
+   },
+   "last_checked": "2026-10-17"
+  },
+  {
+   "slug": "norway-bronnoysund",
+   "code": "NO",
+   "country": "Norway (EEA)",
+   "group": "country",
+   "register": "Enhetsregisteret – Central Coordinating Register for Legal Entities",
+   "operator": "Brønnøysundregistrene",
+   "register_url": {
+    "value": "https://www.brreg.no/",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://data.brreg.no/enhetsregisteret/api/dokumentasjon/en/index.html"
+   },
+   "free_api": {
+    "value": "Yes. Open-data REST API (JSON/HAL) plus nightly bulk downloads (JSON, CSV, XLSX).",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://data.brreg.no/enhetsregisteret/api/dokumentasjon/en/index.html"
+   },
+   "api_docs": {
+    "value": "https://data.brreg.no/enhetsregisteret/api/dokumentasjon/en/index.html",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://data.brreg.no/enhetsregisteret/api/dokumentasjon/en/index.html"
+   },
+   "key_needed": {
+    "value": "No for the open /api endpoints. Endpoints with personal ID numbers (/autorisert-api) need Maskinporten authentication.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://data.brreg.no/enhetsregisteret/api/dokumentasjon/en/index.html"
+   },
+   "data": {
+    "value": "Entities and sub-entities, roles, corporate group structure, update feeds; bulk files produced every night around 05:00.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://data.brreg.no/enhetsregisteret/api/dokumentasjon/en/index.html"
+   },
+   "rate_limit": {
+    "value": "No request-rate limit stated. Paging is capped: (page+1)×size may not exceed 10,000.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://data.brreg.no/enhetsregisteret/api/dokumentasjon/en/index.html"
+   },
+   "licence": {
+    "value": "Norwegian Licence for Open Government Data (NLOD) 2.0.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://data.brreg.no/enhetsregisteret/api/dokumentasjon/en/index.html"
+   },
+   "check": {
+    "url": "https://data.brreg.no/enhetsregisteret/api/enheter/923609016",
+    "expect": "json"
+   },
+   "last_checked": "2026-10-17"
+  },
+  {
+   "slug": "denmark-cvr",
+   "code": "DK",
+   "country": "Denmark",
+   "group": "country",
+   "register": "CVR – Det Centrale Virksomhedsregister",
+   "operator": "Danish Business Authority (Erhvervsstyrelsen)",
+   "register_url": {
+    "value": "https://datacvr.virk.dk/",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://erhvervsstyrelsen.dk/kom-godt-igang-med-elasticSearch"
+   },
+   "free_api": {
+    "value": "Yes, with credentials: system-to-system Elasticsearch access (user ID + password from cvrselvbetjening@erst.dk), or Datafordeler GraphQL. Price not stated on the pages we read.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://erhvervsstyrelsen.dk/kom-godt-igang-med-elasticSearch",
+    "note": "Whether access is free of charge: unverified on the official pages we read."
+   },
+   "api_docs": {
+    "value": "https://erhvervsstyrelsen.dk/kom-godt-igang-med-elasticSearch",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://erhvervsstyrelsen.dk/kom-godt-igang-med-elasticSearch"
+   },
+   "key_needed": {
+    "value": "Yes. Elasticsearch access needs a user ID and password; Datafordeler needs a user plus an API key or OAuth. Only the CVRPerson entity needs an access request.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://datafordeler.dk/dataoversigt/det-centrale-virksomhedsregister-cvr/cvr-graphql-skema/"
+   },
+   "data": {
+    "value": "CVR company data as JSON documents (Elasticsearch, read-only search); Datafordeler GraphQL entities.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://erhvervsstyrelsen.dk/kom-godt-igang-med-elasticSearch"
+   },
+   "rate_limit": {
+    "value": "No numeric limit stated; access may be temporarily blocked if a solution is not efficient for their Elasticsearch.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://erhvervsstyrelsen.dk/kom-godt-igang-med-elasticSearch"
+   },
+   "licence": {
+    "value": null,
+    "verified": false,
+    "note": "Datafordeler says CVR follows its general user terms; we have not read those terms yet.",
+    "checked": "2026-10-17"
+   },
+   "check": {
+    "url": "https://datacvr.virk.dk/",
+    "expect": "html"
+   },
+   "last_checked": "2026-10-17"
+  },
+  {
+   "slug": "estonia-e-business-register",
+   "code": "EE",
+   "country": "Estonia",
+   "group": "country",
+   "register": "e-Business Register (e-Äriregister)",
+   "operator": "Centre of Registers and Information Systems (RIK)",
+   "register_url": {
+    "value": "https://ariregister.rik.ee/eng",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.rik.ee/en/e-business-register/business-register-queries"
+   },
+   "free_api": {
+    "value": "Yes, after signing a contract with RIK; an API-only contract is free of charge. Daily open-data files are also free to download.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://avaandmed.ariregister.rik.ee/en/open-data-api/introduction-api-services"
+   },
+   "api_docs": {
+    "value": "https://avaandmed.ariregister.rik.ee/en/open-data-api/introduction-api-services",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://avaandmed.ariregister.rik.ee/en/open-data-api/introduction-api-services"
+   },
+   "key_needed": {
+    "value": "Yes. A signed contract; REST services use an API key (/keyLogin/), XML services a username and password. Autocomplete and e-invoice-recipient queries need no contract.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://avaandmed.ariregister.rik.ee/en/business-registry-rest-api/api-key-authentication"
+   },
+   "data": {
+    "value": "Eight open-data datasets (JSON/XML, some CSV), updated daily; API: general and detailed company data, annual reports, beneficial owners, representation rights and more. Since 1 Nov 2024 open-data files exclude personal ID codes.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://avaandmed.ariregister.rik.ee/en/downloading-open-data"
+   },
+   "rate_limit": {
+    "value": "50,000 answers/day and 1 simultaneous query per contract partner; 20 requests/minute per IP for document downloads.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://avaandmed.ariregister.rik.ee/en/open-data-api/introduction-api-services"
+   },
+   "licence": {
+    "value": "Downloading requires accepting the licence terms; the site's licence link points to CC BY 4.0.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://avaandmed.ariregister.rik.ee/en/downloading-open-data"
+   },
+   "check": {
+    "url": "https://ariregister.rik.ee/eng",
+    "expect": "html"
+   },
+   "last_checked": "2026-10-17"
+  },
+  {
+   "slug": "netherlands-kvk",
+   "code": "NL",
+   "country": "Netherlands",
+   "group": "country",
+   "register": "KVK Handelsregister",
+   "operator": "Kamer van Koophandel (KVK)",
+   "register_url": {
+    "value": "https://www.kvk.nl/",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://developers.kvk.nl/nl/faq"
+   },
+   "free_api": {
+    "value": "Partly. Open Dataset APIs (basic company data, annual accounts) are free with no subscription. The main APIs cost €6.40 a month per API key plus €0.02 per query (Zoeken is free).",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://developers.kvk.nl/nl/pricing"
+   },
+   "api_docs": {
+    "value": "https://developers.kvk.nl/",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://developers.kvk.nl/nl/faq"
+   },
+   "key_needed": {
+    "value": "Yes. Open Datasets use a public API key; the paid APIs need a subscription key.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://developers.kvk.nl/nl/faq"
+   },
+   "data": {
+    "value": "Open Dataset: basic company data (basisbedrijfsgegevens) and annual accounts (jaarrekeningen) by KVK number, for listed legal forms such as BV, NV, CV, VOF. Paid: search, basic profile, branch profile, names, change service.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://developers.kvk.nl/nl/faq"
+   },
+   "rate_limit": {
+    "value": "Open Dataset APIs: 1 query per minute (separate from other API limits). Our checker received HTTP 429 when calling twice.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://developers.kvk.nl/nl/faq"
+   },
+   "licence": {
+    "value": null,
+    "verified": false,
+    "note": "Not stated on the official pages we checked.",
+    "checked": "2026-10-17"
+   },
+   "check": {
+    "url": "https://opendata.kvk.nl/api/v1/hvds/basisbedrijfsgegevens/kvknummer/69599084",
+    "expect": "json",
+    "ok": [
+     200,
+     404
+    ]
+   },
+   "last_checked": "2026-10-17"
+  },
+  {
+   "slug": "belgium-cbe-kbo",
+   "code": "BE",
+   "country": "Belgium",
+   "group": "country",
+   "register": "KBO/BCE – Crossroads Bank for Enterprises",
+   "operator": "FPS Economy (FOD Economie / SPF Economie)",
+   "register_url": {
+    "value": "https://kbopub.economie.fgov.be/kbopub/zoeknummerform.html",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://economie.fgov.be/nl/themas/ondernemingen/kruispuntbank-van/kruispuntbank-van"
+   },
+   "free_api": {
+    "value": "Yes. Public Search, the Open Data file and the Public Search web services are free. The extended reuse file is paid (€30,000/year for commercial use).",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://economie.fgov.be/nl/themas/ondernemingen/kruispuntbank-van/kruispuntbank-van"
+   },
+   "api_docs": {
+    "value": "https://economie.fgov.be/nl/themas/ondernemingen/kruispuntbank-van/diensten-voor-iedereen/hergebruik-van-publieke/kruispuntbank-van-0",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://economie.fgov.be/nl/themas/ondernemingen/kruispuntbank-van/diensten-voor-iedereen/hergebruik-van-publieke/kruispuntbank-van-0",
+    "note": "Technical details are in the KBO Open Data cookbook (PDF) linked from this page."
+   },
+   "key_needed": {
+    "value": "Open Data: you must register and accept the licence; SFTP access needs a request to kbo-bce-webservice@economie.fgov.be. Web-service access procedure: not stated on the pages we read.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://economie.fgov.be/nl/themas/ondernemingen/kruispuntbank-van/diensten-voor-iedereen/hergebruik-van-publieke/kruispuntbank-van-0"
+   },
+   "data": {
+    "value": "Daily CSV of active registered entities and establishment units (full file + update file, each kept 31 days).",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://economie.fgov.be/nl/themas/ondernemingen/kruispuntbank-van/diensten-voor-iedereen/hergebruik-van-publieke/kruispuntbank-van-0"
+   },
+   "rate_limit": {
+    "value": null,
+    "verified": false,
+    "note": "Not stated on the official pages we checked.",
+    "checked": "2026-10-17"
+   },
+   "licence": {
+    "value": "KBO Open Data licence; personal data may not be reused for direct marketing.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://economie.fgov.be/nl/themas/ondernemingen/kruispuntbank-van/diensten-voor-iedereen/hergebruik-van-publieke/kruispuntbank-van-0"
+   },
+   "check": {
+    "url": "https://kbopub.economie.fgov.be/kbopub/zoeknummerform.html",
+    "expect": "html"
+   },
+   "last_checked": "2026-10-17"
+  },
+  {
+   "slug": "germany-handelsregister",
+   "code": "DE",
+   "country": "Germany",
+   "group": "country",
+   "register": "Handelsregister – Gemeinsames Registerportal der Länder",
+   "operator": "German federal states (Landesjustizverwaltungen)",
+   "register_url": {
+    "value": "https://www.handelsregister.de/",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.bmjv.de/DE/themen/wirtschaft_finanzen/handels_gesellschaftsrecht/handelsregister/handelsregister_node.html"
+   },
+   "free_api": {
+    "value": null,
+    "verified": false,
+    "note": "No official API documented on the portal or the ministry page we checked. Retrieval via the portal has been free since 1 Aug 2022.",
+    "checked": "2026-10-17"
+   },
+   "api_docs": {
+    "value": null,
+    "verified": false,
+    "note": "No API documentation found on the official pages we checked.",
+    "checked": "2026-10-17"
+   },
+   "key_needed": {
+    "value": null,
+    "verified": false,
+    "note": "Not stated on the official pages we checked.",
+    "checked": "2026-10-17"
+   },
+   "data": {
+    "value": "Commercial, cooperative, partnership, company and association registers of all federal states, plus register announcements; register documents (e.g. articles) can be retrieved free since 1 Aug 2022.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.bmjv.de/DE/themen/wirtschaft_finanzen/handels_gesellschaftsrecht/handelsregister/handelsregister_node.html"
+   },
+   "rate_limit": {
+    "value": null,
+    "verified": false,
+    "note": "Third-party sources cite a per-hour retrieval cap; we could not confirm it on an official page. The portal itself warns of overload-related outages.",
+    "checked": "2026-10-17"
+   },
+   "licence": {
+    "value": null,
+    "verified": false,
+    "note": "Not stated on the official pages we checked.",
+    "checked": "2026-10-17"
+   },
+   "check": {
+    "url": "https://www.handelsregister.de/rp_web/welcome.xhtml",
+    "expect": "html"
+   },
+   "last_checked": "2026-10-17"
+  },
+  {
+   "slug": "austria-firmenbuch",
+   "code": "AT",
+   "country": "Austria",
+   "group": "country",
+   "register": "Firmenbuch (Austrian company register)",
+   "operator": "Federal Ministry of Justice (BMJ), via JustizOnline",
+   "register_url": {
+    "value": "https://justizonline.gv.at/jop/web/firmenbuchabfrage",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.bmj.gv.at/service/weiterverwendung-von-informationen.html"
+   },
+   "free_api": {
+    "value": "Yes for High Value Datasets: since January 2025 Firmenbuch HVD data are free via IWG interfaces, after application and approval.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.bmj.gv.at/service/weiterverwendung-von-informationen.html"
+   },
+   "api_docs": {
+    "value": "https://www.bmj.gv.at/service/weiterverwendung-von-informationen.html",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.bmj.gv.at/service/weiterverwendung-von-informationen.html",
+    "note": "The web-service interface description is a ZIP download on this page."
+   },
+   "key_needed": {
+    "value": "Yes. Apply for IWG interface access; downloads need ID Austria or another EU eID and acceptance of the terms of use.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.bmj.gv.at/service/weiterverwendung-von-informationen.html"
+   },
+   "data": {
+    "value": "Company data per Annex 5 of Implementing Regulation (EU) 2023/138 (HVD), plus the authorised representative bodies (Directive (EU) 2019/1151).",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.bmj.gv.at/service/weiterverwendung-von-informationen.html"
+   },
+   "rate_limit": {
+    "value": null,
+    "verified": false,
+    "note": "Not stated on the official pages we checked.",
+    "checked": "2026-10-17"
+   },
+   "licence": {
+    "value": "Agreement under § 6(3)(3) with § 10 IWG (Austrian re-use act), PDF on the ministry page.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.bmj.gv.at/service/weiterverwendung-von-informationen.html"
+   },
+   "check": {
+    "url": "https://justizonline.gv.at/jop/web/firmenbuchabfrage",
+    "expect": "html"
+   },
+   "last_checked": "2026-10-17"
+  },
+  {
+   "slug": "spain-borme",
+   "code": "ES",
+   "country": "Spain",
+   "group": "country",
+   "register": "BORME – Boletín Oficial del Registro Mercantil (official gazette of the commercial register)",
+   "operator": "Agencia Estatal Boletín Oficial del Estado (AEBOE)",
+   "register_url": {
+    "value": "https://www.boe.es/diario_borme/",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.boe.es/datosabiertos/api/api.php"
+   },
+   "free_api": {
+    "value": "Yes. Open-data API for the daily BORME summary (sumario) by date, in XML or JSON.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.boe.es/datosabiertos/api/api.php",
+    "note": "BORME publishes registered company acts; it is not a company-extract API. Extracts from the Registro Mercantil are a separate service (not covered here)."
+   },
+   "api_docs": {
+    "value": "https://www.boe.es/datosabiertos/documentos/APIsumarioBORME.pdf",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.boe.es/datosabiertos/api/api.php"
+   },
+   "key_needed": {
+    "value": "No. A keyless request for a date returned HTTP 200 JSON on our check.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.boe.es/datosabiertos/api/borme/sumario/20261016"
+   },
+   "data": {
+    "value": "Daily BORME summary: sections (e.g. Section A 'Empresarios. Actos inscritos') with items per province, each linking to PDF, HTML and XML versions of the published acts.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.boe.es/datosabiertos/api/borme/sumario/20261016"
+   },
+   "rate_limit": {
+    "value": null,
+    "verified": false,
+    "note": "Not stated on the official pages we checked.",
+    "checked": "2026-10-17"
+   },
+   "licence": {
+    "value": "BOE re-use conditions (standard licence approved by AEBOE resolution of 27 Jun 2024); reuse implies accepting them, with source attribution.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.boe.es/informacion/aviso_legal/index.php"
+   },
+   "check": {
+    "url": "https://www.boe.es/datosabiertos/api/borme/sumario/{last_weekday}",
+    "expect": "json",
+    "ok": [
+     200,
+     404
+    ]
+   },
+   "last_checked": "2026-10-17"
+  },
+  {
+   "slug": "eu-vies-vat-check",
+   "code": "EU",
+   "country": "EU – VAT check",
+   "group": "eu",
+   "register": "VIES – VAT Information Exchange System",
+   "operator": "European Commission, DG TAXUD",
+   "register_url": {
+    "value": "https://ec.europa.eu/taxation_customs/vies/",
+    "verified": true,
+    "checked": "2026-10-15",
+    "source": "https://taxation-customs.ec.europa.eu/vies-vat-information-exchange-system_en"
+   },
+   "free_api": {
+    "value": "Yes. Public REST endpoints: check-vat-number, check-vat-test-service and check-status.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://ec.europa.eu/assets/taxud/vow-information/swagger_publicVAT.yaml"
+   },
+   "api_docs": {
+    "value": "https://ec.europa.eu/assets/taxud/vow-information/swagger_publicVAT.yaml",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://ec.europa.eu/assets/taxud/vow-information/swagger_publicVAT.yaml"
+   },
+   "key_needed": {
+    "value": "No. check-status answered without a key on our check.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://ec.europa.eu/taxation_customs/vies/rest-api/check-status"
+   },
+   "data": {
+    "value": "Whether a VAT number is valid, plus name/address where the member state provides them; per-country service availability.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://ec.europa.eu/assets/taxud/vow-information/swagger_publicVAT.yaml"
+   },
+   "rate_limit": {
+    "value": "No numeric limit; DG TAXUD blocks abusive IPs (e.g. the same number many times a day, many invalid numbers).",
+    "verified": true,
+    "checked": "2026-10-15",
+    "source": "https://ec.europa.eu/taxation_customs/vies/help.html"
+   },
+   "licence": {
+    "value": "For confirming VAT IDs for intra-Community supplies; any other use or extraction is strictly forbidden.",
+    "verified": true,
+    "checked": "2026-10-15",
+    "source": "https://ec.europa.eu/taxation_customs/vies/help.html"
+   },
+   "check": {
+    "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/check-status",
+    "expect": "json",
+    "vies": true
+   },
+   "apify": "eu-company-vat-check",
+   "last_checked": "2026-10-17"
+  },
+  {
+   "slug": "eu-bris-find-a-company",
+   "code": "EU",
+   "country": "EU – register search",
+   "group": "eu",
+   "register": "BRIS – Business Registers Interconnection System ('Find a company' on e-Justice)",
+   "operator": "European Commission, European e-Justice Portal",
+   "register_url": {
+    "value": "https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu_en",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu_en"
+   },
+   "free_api": {
+    "value": null,
+    "verified": false,
+    "note": "No public API documented on the portal page we checked.",
+    "checked": "2026-10-17"
+   },
+   "api_docs": {
+    "value": null,
+    "verified": false,
+    "note": "No API documentation found.",
+    "checked": "2026-10-17"
+   },
+   "key_needed": {
+    "value": null,
+    "verified": false,
+    "note": "Not stated on the official pages we checked.",
+    "checked": "2026-10-17"
+   },
+   "data": {
+    "value": "Search across the interconnected business registers of all EU countries (interconnected since June 2017).",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu_en"
+   },
+   "rate_limit": {
+    "value": null,
+    "verified": false,
+    "note": "Not stated on the official pages we checked.",
+    "checked": "2026-10-17"
+   },
+   "licence": {
+    "value": null,
+    "verified": false,
+    "note": "Not stated on the official pages we checked.",
+    "checked": "2026-10-17"
+   },
+   "check": {
+    "url": "https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu_en",
+    "expect": "html"
+   },
+   "last_checked": "2026-10-17"
+  },
+  {
+   "slug": "switzerland-zefix",
+   "code": "CH",
+   "country": "Switzerland (extra)",
+   "group": "extra",
+   "register": "Zefix – Central Business Name Index",
+   "operator": "Federal Office of Justice, Federal Registry of Commerce (EHRA)",
+   "register_url": {
+    "value": "https://www.zefix.admin.ch/",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.bj.admin.ch/de/handelsregister-zefix-und-regix"
+   },
+   "free_api": {
+    "value": "REST API offered alongside the web app; access on request via zefix@bj.admin.ch. Whether it is free of charge is not stated on the page we read.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.bj.admin.ch/de/handelsregister-zefix-und-regix",
+    "note": "Price: unverified."
+   },
+   "api_docs": {
+    "value": "https://www.zefix.admin.ch/ZefixPublicREST/swagger-ui/index.html",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.bj.admin.ch/de/handelsregister-zefix-und-regix"
+   },
+   "key_needed": {
+    "value": "Yes. Endpoints require credentials (our unauthenticated call got HTTP 401).",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.bj.admin.ch/de/handelsregister-zefix-und-regix"
+   },
+   "data": {
+    "value": "Single queries on the daily-updated central business name index (company search, by UID/CH-ID/EHRA-ID, SOGC publications, legal forms). No subscriptions or full-database downloads; core data of active entities is on opendata.swiss.",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.bj.admin.ch/de/handelsregister-zefix-und-regix"
+   },
+   "rate_limit": {
+    "value": null,
+    "verified": false,
+    "note": "Not stated on the official pages we checked.",
+    "checked": "2026-10-17"
+   },
+   "licence": {
+    "value": "“OGD Open use. Must provide the source.” (opendata.swiss terms).",
+    "verified": true,
+    "checked": "2026-10-17",
+    "source": "https://www.zefix.admin.ch/ZefixPublicREST/v3/api-docs"
+   },
+   "check": {
+    "url": "https://www.zefix.admin.ch/ZefixPublicREST/api/v1/company/search",
+    "expect": "auth",
+    "ok": [
+     401,
+     403
+    ]
+   },
+   "last_checked": "2026-10-17"
+  }
+ ]
+}

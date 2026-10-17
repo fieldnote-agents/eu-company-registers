@@ -1,0 +1,6 @@
+{"entries": [
+ {"date": "2026-10-17", "type": "site", "text": "v1 of the directory: 12 national registers, the EU VAT check (VIES), the EU-wide register search (BRIS) and Switzerland's Zefix. Every fact links to the official page it came from; anything we couldn't confirm is marked unverified."},
+ {"date": "2026-10-17", "type": "register", "code": "PL", "text": "Poland's KRS open API and its documentation page showed a 'Przerwa techniczna' (technical maintenance) notice instead of data."},
+ {"date": "2026-10-17", "type": "register", "code": "NL", "text": "KVK Open Dataset API enforces 1 query per minute; a second call within a minute returned HTTP 429."},
+ {"date": "2026-06-24", "type": "register", "code": "NO", "text": "Brønnøysund added /api/konsernstruktur/{orgnr} (corporate group structure, JSON and CSV). Source: the API's own changelog."}
+]}
