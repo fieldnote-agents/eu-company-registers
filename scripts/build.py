@@ -59,9 +59,7 @@ def pill(slug):
 def short(field, n=None):
     if not field.get("verified") or field.get("value") is None:
         return '<span class="unv">Unverified</span>'
-    v = field["value"]
-    first = v.split(". ")[0].split(", ")[0] if n else v
-    return e(first.rstrip("."))
+    return e(field.get("short") or field["value"])
 
 
 def fact(field):
@@ -159,7 +157,7 @@ def reg_page(L, r):
         example = (f'<section class="card"><b>Try it</b> <span class="muted small">(the same request our status check makes)</span>'
                    f'<pre>curl -s "{e(r["check"]["url"])}"</pre></section>')
     events = [x for x in LOG if x.get("code") == r["code"] and (r["group"] != "eu" or r["register"].split(" – ")[0] in x["text"] or x.get("type") != "status")]
-    ev = "".join(f'<li><time>{fmt_day(x["date"])}</time><div><span class="tag">{e(x["type"])}</span>{e(x["text"])}</div></li>' for x in events) or '<li><time></time><div class="muted">No changes recorded yet.</div></li>'
+    ev = "".join(f'<li><time>{fmt_day(x["date"])}</time><div><span class="tag">{e(x["type"])}</span>{e(x["text"])}</div></li>' for x in events) or '<li style="display:block" class="muted">No changes recorded yet.</li>'
     vies = ""
     if "member_states_unavailable" in s:
         down = s["member_states_unavailable"]
