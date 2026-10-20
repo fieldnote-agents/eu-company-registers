@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-10-20",
+   "type": "status",
+   "code": "PL",
+   "text": "KRS: status changed from Maintenance to Up (HTTP 200)."
+  },
+  {
+   "date": "2026-10-20",
+   "type": "status",
+   "code": "EU",
+   "text": "BRIS: status changed from Up to Unexpected response (HTTP 403: unexpected status)."
+  },
+  {
    "date": "2026-10-17",
    "type": "site",
    "text": "Every cell now links to an official source. Newly documented: Germany's portal terms (max 60 searches or retrievals per hour; no systematic retrieval), KVK Open Dataset licence (CC BY 4.0) and limits (1 query/min per IP, 200 per 5 min for all users), CVR on Datafordeler (CC BY 4.0), BRIS terms. Where the source is silent, the cell now reads 'Not documented'."
