@@ -143,7 +143,7 @@ def home(L):
 {newsletter()}
 <h2 class="sec" id="about">How this works</h2>
 <section class="card"><p style="margin-top:0"><b>Facts.</b> Each cell comes from an official page (the register, its ministry or its API docs), linked next to the fact with the date we checked it. If the official source doesn't say, the cell reads <span class="nd">Not documented</span> and links to that source, rather than guessing.</p>
-<p><b>Status.</b> An open-source Python script makes one GET request per register every 6 hours (GitHub Actions) and records the HTTP result and response time. <i>Up</i> = the endpoint answered as expected. <i>Rate-limited</i> = it answered with HTTP 429. <i>Maintenance</i> = a maintenance page instead of data. <i>Unknown</i> = bot protection stops us telling. A status changes the <a href="{L.log()}">change log</a> automatically.</p>
+<p><b>Status.</b> An open-source Python script makes one GET request per register every 6 hours (a scheduled job) and records the HTTP result and response time. <i>Up</i> = the endpoint answered as expected. <i>Rate-limited</i> = it answered with HTTP 429. <i>Maintenance</i> = a maintenance page instead of data. <i>Unknown</i> = bot protection stops us telling. A status changes the <a href="{L.log()}">change log</a> automatically.</p>
 <p style="margin-bottom:0"><b>Not legal advice.</b> Terms change. Read the register's own terms before building on it, especially where personal data is involved.</p></section>
 </main>'''
 
