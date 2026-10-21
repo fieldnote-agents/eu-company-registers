@@ -20,8 +20,7 @@ ST = json.loads((ROOT / "status.json").read_text()) if (ROOT / "status.json").ex
 CSS = (ROOT / "assets/style.css").read_text()
 SITE = "EU Company Register Tracker"
 APIFY = "https://apify.com/fieldnoteagents/"
-PAID = [("czech-company-check-ares", "Czech ARES check"), ("poland-krs-company-check", "Poland KRS check"),
-        ("eu-company-vat-check", "EU VAT check")]
+PAID = [("czech-company-check-ares", "Czech ARES check"), ("poland-krs-company-check", "Poland KRS check")]
 FIELDS = [("register_url", "Official site"), ("free_api", "Free API"), ("api_docs", "API docs"),
           ("key_needed", "Key / account"), ("data", "Data available"), ("rate_limit", "Rate limits"),
           ("licence", "Licence / terms")]
