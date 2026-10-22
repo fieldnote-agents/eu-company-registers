@@ -3,6 +3,18 @@
   {
    "date": "2026-10-22",
    "type": "status",
+   "code": "FR",
+   "text": "API Recherche d’entreprises (Annuaire des Entreprises): status changed from Up to Down (No response ([SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.))."
+  },
+  {
+   "date": "2026-10-22",
+   "type": "status",
+   "code": "ES",
+   "text": "BORME: status changed from Unexpected response to Up (HTTP 200)."
+  },
+  {
+   "date": "2026-10-22",
+   "type": "status",
    "code": "NL",
    "text": "KVK Handelsregister: status changed from Up (rate-limited) to Up (HTTP 404)."
   },
