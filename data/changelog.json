@@ -4,6 +4,18 @@
    "date": "2026-10-22",
    "type": "status",
    "code": "FR",
+   "text": "API Recherche d’entreprises (Annuaire des Entreprises): status changed from Down to Up (HTTP 200)."
+  },
+  {
+   "date": "2026-10-22",
+   "type": "status",
+   "code": "BE",
+   "text": "KBO/BCE: status changed from Up to Down (HTTP 503: server error)."
+  },
+  {
+   "date": "2026-10-22",
+   "type": "status",
+   "code": "FR",
    "text": "API Recherche d’entreprises (Annuaire des Entreprises): status changed from Up to Down (No response ([SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.))."
   },
   {
