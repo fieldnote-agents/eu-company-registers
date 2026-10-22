@@ -3,6 +3,18 @@
   {
    "date": "2026-10-22",
    "type": "status",
+   "code": "NL",
+   "text": "KVK Handelsregister: status changed from Up to Up (rate-limited) (HTTP 429: answering, but rate-limited)."
+  },
+  {
+   "date": "2026-10-22",
+   "type": "status",
+   "code": "BE",
+   "text": "KBO/BCE: status changed from Down to Up (HTTP 200)."
+  },
+  {
+   "date": "2026-10-22",
+   "type": "status",
    "code": "FR",
    "text": "API Recherche d’entreprises (Annuaire des Entreprises): status changed from Down to Up (HTTP 200)."
   },
