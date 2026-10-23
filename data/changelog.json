@@ -4,6 +4,12 @@
    "date": "2026-10-23",
    "type": "status",
    "code": "ES",
+   "text": "BORME: status changed from Unexpected response to Up (HTTP 200)."
+  },
+  {
+   "date": "2026-10-23",
+   "type": "status",
+   "code": "ES",
    "text": "BORME: status changed from Up to Unexpected response (HTTP 404: expected JSON, got application/xml)."
   },
   {
