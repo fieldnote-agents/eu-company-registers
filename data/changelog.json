@@ -1,6 +1,12 @@
 {
  "entries": [
   {
+   "date": "2026-10-24",
+   "type": "status",
+   "code": "FR",
+   "text": "API Recherche d’entreprises (Annuaire des Entreprises): status changed from Up to Down (No response (_ssl.c:1012: The handshake operation timed out))."
+  },
+  {
    "date": "2026-10-23",
    "type": "status",
    "code": "ES",
