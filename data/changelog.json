@@ -1,6 +1,12 @@
 {
  "entries": [
   {
+   "date": "2026-10-25",
+   "type": "status",
+   "code": "NL",
+   "text": "KVK Handelsregister: status changed from Up (rate-limited) to Up (HTTP 404)."
+  },
+  {
    "date": "2026-10-24",
    "type": "status",
    "code": "FR",
