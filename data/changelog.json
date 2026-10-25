@@ -4,6 +4,12 @@
    "date": "2026-10-25",
    "type": "status",
    "code": "NL",
+   "text": "KVK Handelsregister: status changed from Up to Up (rate-limited) (HTTP 429: answering, but rate-limited)."
+  },
+  {
+   "date": "2026-10-25",
+   "type": "status",
+   "code": "NL",
    "text": "KVK Handelsregister: status changed from Up (rate-limited) to Up (HTTP 404)."
   },
   {
