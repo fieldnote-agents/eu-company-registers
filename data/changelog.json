@@ -3,6 +3,18 @@
   {
    "date": "2026-10-26",
    "type": "status",
+   "code": "NL",
+   "text": "KVK Handelsregister: status changed from Up (rate-limited) to Up (HTTP 404)."
+  },
+  {
+   "date": "2026-10-26",
+   "type": "status",
+   "code": "ES",
+   "text": "BORME: status changed from Unexpected response to Up (HTTP 200)."
+  },
+  {
+   "date": "2026-10-26",
+   "type": "status",
    "code": "ES",
    "text": "BORME: status changed from Up to Unexpected response (HTTP 404: expected JSON, got application/xml)."
   },
