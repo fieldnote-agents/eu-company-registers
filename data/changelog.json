@@ -1,6 +1,12 @@
 {
  "entries": [
   {
+   "date": "2026-10-26",
+   "type": "status",
+   "code": "ES",
+   "text": "BORME: status changed from Up to Unexpected response (HTTP 404: expected JSON, got application/xml)."
+  },
+  {
    "date": "2026-10-25",
    "type": "status",
    "code": "NL",
