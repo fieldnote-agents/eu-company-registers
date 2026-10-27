@@ -3,6 +3,12 @@
   {
    "date": "2026-10-27",
    "type": "status",
+   "code": "ES",
+   "text": "BORME: status changed from Unexpected response to Up (HTTP 200)."
+  },
+  {
+   "date": "2026-10-27",
+   "type": "status",
    "code": "NL",
    "text": "KVK Handelsregister: status changed from Up to Up (rate-limited) (HTTP 429: answering, but rate-limited)."
   },
