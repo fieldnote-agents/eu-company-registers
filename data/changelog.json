@@ -4,6 +4,12 @@
    "date": "2026-10-30",
    "type": "status",
    "code": "ES",
+   "text": "BORME: status changed from Up to Down (HTTP 500: server error)."
+  },
+  {
+   "date": "2026-10-30",
+   "type": "status",
+   "code": "ES",
    "text": "BORME: status changed from Unexpected response to Up (HTTP 200)."
   },
   {
