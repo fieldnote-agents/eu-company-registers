@@ -3,6 +3,12 @@
   {
    "date": "2026-10-31",
    "type": "status",
+   "code": "ES",
+   "text": "BORME: status changed from Down to Up (HTTP 200)."
+  },
+  {
+   "date": "2026-10-31",
+   "type": "status",
    "code": "BE",
    "text": "KBO/BCE: status changed from Down to Up (HTTP 200)."
   },

@@ -1,16 +1,16 @@
 {
- "checked_at": "2026-10-31T06:28:06Z",
+ "checked_at": "2026-10-31T14:00:38Z",
  "registers": {
   "czechia-ares": {
    "state": "up",
    "label": "Up",
    "detail": "HTTP 200",
    "http_status": 200,
-   "response_ms": 550,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "response_ms": 461,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00006947",
    "uptime_pct": 100.0,
-   "checks": 42,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -178,6 +178,10 @@
     ],
     [
      "2026-10-31T06:28:06Z",
+     "up"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
      "up"
     ]
    ]
@@ -187,11 +191,11 @@
    "label": "Up",
    "detail": "HTTP 200",
    "http_status": 200,
-   "response_ms": 869,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "response_ms": 831,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/0000019193?rejestr=P&format=json",
-   "uptime_pct": 95.2,
-   "checks": 42,
+   "uptime_pct": 95.3,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -359,6 +363,10 @@
     ],
     [
      "2026-10-31T06:28:06Z",
+     "up"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
      "up"
     ]
    ]
@@ -368,11 +376,11 @@
    "label": "Up",
    "detail": "HTTP 200",
    "http_status": 200,
-   "response_ms": 853,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "response_ms": 739,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://recherche-entreprises.api.gouv.fr/search?q=danone&per_page=1",
-   "uptime_pct": 95.2,
-   "checks": 42,
+   "uptime_pct": 95.3,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -540,6 +548,10 @@
     ],
     [
      "2026-10-31T06:28:06Z",
+     "up"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
      "up"
     ]
    ]
@@ -549,11 +561,11 @@
    "label": "Up",
    "detail": "HTTP 200",
    "http_status": 200,
-   "response_ms": 1122,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "response_ms": 1126,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=0112038-9",
    "uptime_pct": 100.0,
-   "checks": 42,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -721,6 +733,10 @@
     ],
     [
      "2026-10-31T06:28:06Z",
+     "up"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
      "up"
     ]
    ]
@@ -730,11 +746,11 @@
    "label": "Up",
    "detail": "HTTP 200",
    "http_status": 200,
-   "response_ms": 644,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "response_ms": 638,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://data.brreg.no/enhetsregisteret/api/enheter/923609016",
    "uptime_pct": 100.0,
-   "checks": 42,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -902,6 +918,10 @@
     ],
     [
      "2026-10-31T06:28:06Z",
+     "up"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
      "up"
     ]
    ]
@@ -911,11 +931,11 @@
    "label": "Unknown",
    "detail": "HTTP 403: bot protection in front of the site; cannot tell if the register is up",
    "http_status": 403,
-   "response_ms": 83,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "response_ms": 29,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://datacvr.virk.dk/",
    "uptime_pct": 0.0,
-   "checks": 42,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -1083,6 +1103,10 @@
     ],
     [
      "2026-10-31T06:28:06Z",
+     "unknown"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
      "unknown"
     ]
    ]
@@ -1092,11 +1116,11 @@
    "label": "Up",
    "detail": "HTTP 200",
    "http_status": 200,
-   "response_ms": 1068,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "response_ms": 1667,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://ariregister.rik.ee/eng",
    "uptime_pct": 100.0,
-   "checks": 42,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -1264,6 +1288,10 @@
     ],
     [
      "2026-10-31T06:28:06Z",
+     "up"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
      "up"
     ]
    ]
@@ -1273,11 +1301,11 @@
    "label": "Up (rate-limited)",
    "detail": "HTTP 429: answering, but rate-limited",
    "http_status": 429,
-   "response_ms": 505,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "response_ms": 705,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://opendata.kvk.nl/api/v1/hvds/basisbedrijfsgegevens/kvknummer/69599084",
    "uptime_pct": 100.0,
-   "checks": 42,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -1445,6 +1473,10 @@
     ],
     [
      "2026-10-31T06:28:06Z",
+     "limited"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
      "limited"
     ]
    ]
@@ -1454,11 +1486,11 @@
    "label": "Up",
    "detail": "HTTP 200",
    "http_status": 200,
-   "response_ms": 592,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "response_ms": 598,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://kbopub.economie.fgov.be/kbopub/zoeknummerform.html",
-   "uptime_pct": 95.2,
-   "checks": 42,
+   "uptime_pct": 95.3,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -1626,6 +1658,10 @@
     ],
     [
      "2026-10-31T06:28:06Z",
+     "up"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
      "up"
     ]
    ]
@@ -1635,11 +1671,11 @@
    "label": "Up",
    "detail": "HTTP 200",
    "http_status": 200,
-   "response_ms": 752,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "response_ms": 694,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://www.handelsregister.de/rp_web/welcome.xhtml",
    "uptime_pct": 100.0,
-   "checks": 42,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -1807,6 +1843,10 @@
     ],
     [
      "2026-10-31T06:28:06Z",
+     "up"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
      "up"
     ]
    ]
@@ -1816,11 +1856,11 @@
    "label": "Up",
    "detail": "HTTP 200",
    "http_status": 200,
-   "response_ms": 942,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "response_ms": 872,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://justizonline.gv.at/jop/web/firmenbuchabfrage",
    "uptime_pct": 100.0,
-   "checks": 42,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -1988,20 +2028,24 @@
     ],
     [
      "2026-10-31T06:28:06Z",
+     "up"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
      "up"
     ]
    ]
   },
   "spain-borme": {
-   "state": "down",
-   "label": "Down",
-   "detail": "HTTP 500: server error",
-   "http_status": 500,
-   "response_ms": 338,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "state": "up",
+   "label": "Up",
+   "detail": "HTTP 200",
+   "http_status": 200,
+   "response_ms": 607,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://www.boe.es/datosabiertos/api/borme/sumario/20261030",
-   "uptime_pct": 64.3,
-   "checks": 42,
+   "uptime_pct": 65.1,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -2170,6 +2214,10 @@
     [
      "2026-10-31T06:28:06Z",
      "down"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
+     "up"
     ]
    ]
   },
@@ -2178,11 +2226,11 @@
    "label": "Up",
    "detail": "HTTP 200",
    "http_status": 200,
-   "response_ms": 452,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "response_ms": 429,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://ec.europa.eu/taxation_customs/vies/rest-api/check-status",
    "uptime_pct": 100.0,
-   "checks": 42,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -2351,22 +2399,24 @@
     [
      "2026-10-31T06:28:06Z",
      "up"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
+     "up"
     ]
    ],
-   "member_states_unavailable": [
-    "DE"
-   ]
+   "member_states_unavailable": []
   },
   "eu-bris-find-a-company": {
    "state": "up",
    "label": "Up",
    "detail": "HTTP 200",
    "http_status": 200,
-   "response_ms": 504,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "response_ms": 427,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu_en",
-   "uptime_pct": 19.0,
-   "checks": 42,
+   "uptime_pct": 20.9,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -2534,6 +2584,10 @@
     ],
     [
      "2026-10-31T06:28:06Z",
+     "up"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
      "up"
     ]
    ]
@@ -2543,11 +2597,11 @@
    "label": "Up",
    "detail": "HTTP 401: endpoint answering (credentials required)",
    "http_status": 401,
-   "response_ms": 608,
-   "checked_at": "2026-10-31T06:28:06Z",
+   "response_ms": 728,
+   "checked_at": "2026-10-31T14:00:38Z",
    "endpoint": "https://www.zefix.admin.ch/ZefixPublicREST/api/v1/company/search",
    "uptime_pct": 100.0,
-   "checks": 42,
+   "checks": 43,
    "history": [
     [
      "2026-10-17T20:11:14Z",
@@ -2715,6 +2769,10 @@
     ],
     [
      "2026-10-31T06:28:06Z",
+     "up"
+    ],
+    [
+     "2026-10-31T14:00:38Z",
      "up"
     ]
    ]
