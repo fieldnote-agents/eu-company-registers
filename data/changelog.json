@@ -1,6 +1,12 @@
 {
  "entries": [
   {
+   "date": "2026-10-31",
+   "type": "status",
+   "code": "BE",
+   "text": "KBO/BCE: status changed from Up to Down (HTTP 500: server error)."
+  },
+  {
    "date": "2026-10-30",
    "type": "status",
    "code": "ES",
