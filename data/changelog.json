@@ -3,6 +3,18 @@
   {
    "date": "2026-11-04",
    "type": "status",
+   "code": "BE",
+   "text": "KBO/BCE: status changed from Up to Down (No response (The read operation timed out))."
+  },
+  {
+   "date": "2026-11-04",
+   "type": "status",
+   "code": "ES",
+   "text": "BORME: status changed from Unexpected response to Up (HTTP 200)."
+  },
+  {
+   "date": "2026-11-04",
+   "type": "status",
    "code": "ES",
    "text": "BORME: status changed from Up to Unexpected response (HTTP 404: expected JSON, got application/xml)."
   },
