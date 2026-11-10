@@ -1,6 +1,12 @@
 {
  "entries": [
   {
+   "date": "2026-11-10",
+   "type": "status",
+   "code": "ES",
+   "text": "BORME: status changed from Unexpected response to Up (HTTP 200)."
+  },
+  {
    "date": "2026-11-09",
    "type": "status",
    "code": "ES",
