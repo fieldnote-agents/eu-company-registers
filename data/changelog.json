@@ -1,6 +1,12 @@
 {
  "entries": [
   {
+   "date": "2026-11-21",
+   "type": "status",
+   "code": "BE",
+   "text": "KBO/BCE: status changed from Down to Up (HTTP 200)."
+  },
+  {
    "date": "2026-11-20",
    "type": "status",
    "code": "PL",
