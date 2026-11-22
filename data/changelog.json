@@ -4,6 +4,12 @@
    "date": "2026-11-22",
    "type": "status",
    "code": "ES",
+   "text": "BORME: status changed from Down to Up (HTTP 200)."
+  },
+  {
+   "date": "2026-11-22",
+   "type": "status",
+   "code": "ES",
    "text": "BORME: status changed from Up to Down (No response ([SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.))."
   },
   {
