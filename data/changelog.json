@@ -3,6 +3,12 @@
   {
    "date": "2026-11-23",
    "type": "status",
+   "code": "DE",
+   "text": "Handelsregister: status changed from Up to Down (No response (_ssl.c:1012: The handshake operation timed out))."
+  },
+  {
+   "date": "2026-11-23",
+   "type": "status",
    "code": "ES",
    "text": "BORME: status changed from Up to Unexpected response (HTTP 404: expected JSON, got application/xml)."
   },
